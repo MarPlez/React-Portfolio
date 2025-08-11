@@ -48,7 +48,7 @@ export const TextLeft = styled.div`
 export const TextRight = styled.div`
   position: absolute;
   right: 50px;
-  top: 38%;
+  top: 33%;
   font-size: 36px;
   font-weight: bold;
   color: #c47a2c;
@@ -101,8 +101,8 @@ position: absolute;
   display: block;
   z-index: 10;                 
   transition: opacity 0.2s ease-out, transform 0.2s ease-out;  
-  right: -20px;
-  bottom: 0px;
+  right: -30px;
+  bottom: 30px;
   opacity: ${({ position }) =>
     0.05 + 0.95 * Math.max(0, Math.min(1, (position - 50) / 50))};
 `;
