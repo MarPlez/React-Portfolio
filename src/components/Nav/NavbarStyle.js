@@ -47,6 +47,7 @@ export const MenuItem = styled.li`
 
   &:hover > a {
     color: #ab5429;
+    cursor: pointer;
   }
 
   &:hover > a::before {
