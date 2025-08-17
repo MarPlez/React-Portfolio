@@ -80,6 +80,7 @@ export const MenuLink = styled.a`
     visibility: hidden;
   }
 `;
+
 export const GitHubLink = styled.a`
   position: absolute;
   right: 20px;

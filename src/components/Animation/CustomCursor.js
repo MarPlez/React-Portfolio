@@ -61,7 +61,7 @@ const CustomCursor = () => {
         backgroundColor: background,
         border: border,
         pointerEvents: "none",
-        transition: "width 0.5s ease, height 0.5s ease, background-color 0.5s ease, border 0.5s easy",
+        transition: "width 0.25s ease, height 0.25s ease, margin 0.25s ease, background-color 0.25s ease, border 0.25s ease",
         zIndex: 9999,
       }}
     />
