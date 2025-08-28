@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Nav/Navbar'; 
-import { Container } from './components/Container'; 
+import { Container } from './components/container'; 
 import About from './components/About/About';
 import CustomCursor from './components/Animation/CustomCursor';
 import Footer from './components/Footer/Footer';
