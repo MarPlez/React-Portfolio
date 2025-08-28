@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const CustomCursor = () => {
+export const CustomCursor = () => {
   const cursorRef = useRef(null);
   const [isHoveringTarget, setIsHoveringTarget] = useState(false);
 
@@ -44,7 +44,7 @@ const CustomCursor = () => {
 
   const size = isHoveringTarget ? 50 : 30;
   const border = isHoveringTarget ? "1px solid transparent" : "1px solid #cf8536";
-  const background = isHoveringTarget ? "rgba(207, 133, 54, 0.3)" : "transparent";
+  const background = isHoveringTarget ? "rgba(208, 131, 0, 0.3)" : "transparent";
 
   return (
     <div

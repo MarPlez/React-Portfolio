@@ -14,8 +14,7 @@ flex-direction: column;
 align-items: center;
 display: flex;
 color: black;
-font-family: "Poppins", sans-serif;
-font-size: 40px;
+font-size: 36px;
 `;
 
 export const IntroText = styled.p`
@@ -45,7 +44,7 @@ export const Role = styled.span`
   font-weight: bold;
   display: flex;
   align-items: center;
-  color: #ab5429;
+  color: #a85700;
   margin: 0;
   padding: 0;
 `;

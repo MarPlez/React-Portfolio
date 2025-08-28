@@ -13,10 +13,10 @@ import {
   OverlayImage, 
   TitleWrapper,
   Title,
+  WelcomeText,
   BannerLeft,
   BannerRight,
 } from './MyIntroStyles';
-import TypingIntro from "./AnimatedIntroText";
 
 
 export default function SplitImageSlider() {
@@ -43,7 +43,7 @@ export default function SplitImageSlider() {
   <InnerWrapper>
     <TitleWrapper>
       <Title>Hello.</Title>
-      <TypingIntro />
+      <WelcomeText>WELCOME TO MY PAGE</WelcomeText>
     </TitleWrapper>
 
     <TextLeft position={position}>Photographer</TextLeft>

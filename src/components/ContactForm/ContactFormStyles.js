@@ -1,9 +1,8 @@
-// ContactFormStyles.js
 import styled from 'styled-components';
 
 export const ContactFormContainer = styled.div`
   display: flex;
-  background-color: #ece8e0;
+  background-color: #F3F2EE;
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
   padding: 50px;
@@ -19,9 +18,10 @@ export const LeftPanel = styled.div`
 export const FormTitle = styled.div`
   display: flex;
   flex-direction: column;
-  color: #ab5429;
+  color: #a85700;
   font-size: 26px;
   font-weight: bold;
+  line-height: 1;
 `;
 
 export const ContactDetails = styled.div`
@@ -30,7 +30,7 @@ export const ContactDetails = styled.div`
 
 export const AppContact = styled.div`
   font-size: 12px;
-  color: #cf8536;
+  color: black;
   margin-top: 10px;
 `;
 
@@ -51,7 +51,7 @@ export const RightPanel = styled.div`
 export const ContactFormWrapper = styled.div``;
 
 export const Title = styled.h2`
-  color: #ab5429;
+  color: #a85700;
   font-size: 20px;
   margin-bottom: 40px;
 `;
@@ -84,9 +84,9 @@ export const Input = styled.input`
   padding: 10px 5px;
   background: none;
   border: none;
-  border-bottom: 1px solid #cf8536;
+  border-bottom: 1px solid #d08300;
   font-size: 14px;
-  color: #333;
+  color: black;
   outline: none;
 `;
 
@@ -95,9 +95,9 @@ export const Textarea = styled.textarea`
   padding: 10px 5px;
   background: none;
   border: none;
-  border-bottom: 1px solid #cf8536;
+  border-bottom: 1px solid #d08300;
   font-size: 14px;
-  color: #333;
+  color: black;
   outline: none;
   resize: none;
   min-height: 80px;
@@ -110,7 +110,7 @@ export const Label = styled.span`
   pointer-events: none;
   transition: 0.3s;
   font-size: 14px;
-  color: #cf8536;
+  color: #a85700;
 
   ${Input}:focus ~ &,
   ${Input}:valid ~ &,
@@ -118,21 +118,7 @@ export const Label = styled.span`
   ${Textarea}:valid ~ & {
     transform: translateY(-20px);
     font-size: 12px;
-    color: #ab5429;
+    color: #d08300;
   }
 `;
 
-export const SubmitButton = styled.input`
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 12px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 14px;
-
-  &:hover {
-    background-color: #ab5429;
-  }
-`;

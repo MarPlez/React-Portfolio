@@ -29,8 +29,16 @@ export const TitleWrapper = styled.div`
 export const Title = styled.h2`
   font-size: 48px;
   margin: 0;
-  color: #cf8536;
-  line-height: 0.5;
+  color: #d08300;
+  line-height: 0.4;
+`;
+
+export const WelcomeText = styled.p`
+  font-size: 16px;
+  color: #8a7d72;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid #d08300;
+  line-height: 1;
 `;
 
 export const TextLeft = styled.div`
@@ -39,7 +47,7 @@ export const TextLeft = styled.div`
   top: 50%;
   font-size: 36px;
   font-weight: bold;
-  color: #c47a2c;
+  color: #a85700;
   z-index: 30;
   opacity: ${(p) => 0.05 + ((100 - p.position) / 50) * 0.95};
   transition: opacity 0.2s ease-out;
@@ -51,7 +59,7 @@ export const TextRight = styled.div`
   top: 33%;
   font-size: 36px;
   font-weight: bold;
-  color: #c47a2c;
+  color: #a85700;
   z-index: 30; 
   opacity: ${(p) => 0.05 + (p.position / 50) * 0.95};
   transition: opacity 0.2s ease-out;
@@ -106,5 +114,6 @@ position: absolute;
   opacity: ${({ position }) =>
     0.05 + 0.95 * Math.max(0, Math.min(1, (position - 50) / 50))};
 `;
+
 
 

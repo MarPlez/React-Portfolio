@@ -1,4 +1,3 @@
-// ContactForm.jsx
 import React from 'react';
 import aboutpicture from '../img/aboutpicture.png';
 import {
@@ -16,8 +15,8 @@ import {
   Input,
   Textarea,
   Label,
-  SubmitButton
 } from './ContactFormStyles';
+import SendButton from './SendButton';
 
 const ContactForm = () => {
   return (
@@ -47,7 +46,7 @@ const ContactForm = () => {
                   <Label>Last Name</Label>
                 </InputBox>
                 <InputBox className="small-field">
-                  <Input type="email" required />
+                  <Input required />
                   <Label>Email</Label>
                 </InputBox>
                 <InputBox className="small-field">
@@ -59,7 +58,7 @@ const ContactForm = () => {
                   <Label>Write Your Message Here.</Label>
                 </InputBox>
                 <InputBox className="big-field">
-                  <SubmitButton className="cursor-hover-target" type="submit" value="Submit" />
+                  <SendButton className="cursor-hover-target" />
                 </InputBox>
               </FormBox>
             </ContactFormWrapper>

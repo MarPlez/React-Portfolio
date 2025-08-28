@@ -3,16 +3,16 @@ import githubIcon from '../img/github.png';
 import githubHoverIcon from '../img/githubhover.png';
 
 export const Logo = styled.div`
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: bold;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   position: absolute;
   left: 10px;
 `;
 
 export const Nav = styled.nav`
   width: 100vw;
-  background-color: #ece8e0;
+  background-color: #FFFFFF;
   border-bottom: 1px solid rgba(197, 118, 33);
   top: 0;
   position: fixed;
@@ -40,13 +40,15 @@ export const Menu = styled.ul`
 `;
 
 export const MenuItem = styled.li`
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   display: inline-block;
-  width: 90px;
+  width: 100px;
   position: relative;
   transition: all 0.3s ease-in-out;
 
   &:hover > a {
-    color: #ab5429;
+    color: #a85700;
     cursor: pointer;
   }
 
@@ -74,7 +76,7 @@ export const MenuLink = styled.a`
     height: 3px;
     bottom: 3px;
     left: 0px;
-    background-color: #ab5429;
+    background-color: #d08300;
     transition: all 0.2s ease-in-out;
     transform: scale(0, 0);
     visibility: hidden;

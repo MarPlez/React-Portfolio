@@ -1,16 +1,16 @@
-// Footer.styled.js
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   position: absolute;
   display: flex;
   width: 100%;
-  height: 350px;
-  overflow: hidden;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-y: visible;
 `;
 
 export const Background = styled.div`
-background-color: #f2f0eb;  
+background-color: #F9F9F7;
 position: absolute;
 z-index: -1;
 right: 0;
@@ -56,6 +56,11 @@ export const Links = styled.ul`
   a {
     text-decoration: none;
     color: inherit; 
+    color: white;
+  }
+
+  a:hover {
+  color: black;
   }
 `;
 

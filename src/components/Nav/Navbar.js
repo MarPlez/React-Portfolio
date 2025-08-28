@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <Nav>
       <NavContainer>
-      <Logo>MARCIN PLEZIA</Logo>
+      <Logo>MarcinPlezia</Logo>
       <Menu>
         <MenuItem>
           <MenuLink href="#home" className="cursor-hover-target">Home</MenuLink>
@@ -23,7 +23,7 @@ export default function Navbar() {
           <MenuLink href="#about" className="cursor-hover-target">About</MenuLink>
         </MenuItem>
         <MenuItem>
-          <MenuLink href="#myhistory" className="cursor-hover-target">My history</MenuLink>
+          <MenuLink href="#myhistory" className="cursor-hover-target">MyJourney</MenuLink>
         </MenuItem>
         <MenuItem>
           <MenuLink href="#contact" className="cursor-hover-target">Contact</MenuLink>
