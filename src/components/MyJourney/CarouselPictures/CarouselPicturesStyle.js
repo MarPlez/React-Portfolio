@@ -7,6 +7,15 @@ export const StyledSwiper = styled(Swiper)`
   padding-bottom: 36px;
   margin: 40px 0 60px 0;
 
+  @media (max-width: 1000px) {
+  height: 200px;
+  }
+
+  @media (max-width: 768px) {
+  width: 400px;
+  margin: 20px 0 10px 0;
+  }
+
   .swiper-pagination {
     bottom: 0px !important;
     left: 0;
@@ -18,18 +27,16 @@ export const StyledSwiper = styled(Swiper)`
     background: black;
   }
 
-  .swiper-slide-shadow-left,
-  .swiper-slide-shadow-right {
-    pointer-events: none;
-  }
-
   .nav-btn {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
     position: absolute;
     transform: translateY(-50%);
     z-index: 6;
     width: 36px;
     height: 36px;
-    border-radius: 9999px;
+    border-radius: 50px;
     border: 1px solid #d08300;
     background: #fff;
     color: black;
@@ -38,6 +45,11 @@ export const StyledSwiper = styled(Swiper)`
     cursor: pointer;
     user-select: none;
     transition: background 0.2s, transform 0.2s;
+
+    @media (max-width: 1000px) {
+    width: 30px;
+    height: 30px;
+    }
   }
 
   .nav-btn:hover {
@@ -47,10 +59,18 @@ export const StyledSwiper = styled(Swiper)`
     
   .nav-prev {
     left: 100px;
+
+    @media (max-width: 1000px) {
+    left: 60px;
+    }
   }
 
   .nav-next {
     right: 100px;
+
+    @media (max-width: 1000px) {
+    right: 60px;
+    }
   }
 `;
 

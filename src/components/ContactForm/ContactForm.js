@@ -15,6 +15,7 @@ import {
   Input,
   Textarea,
   Label,
+  TextWrapper
 } from './ContactFormStyles';
 import SendButton from './SendButton';
 
@@ -22,6 +23,7 @@ const ContactForm = () => {
   return (
     <ContactFormContainer>
           <LeftPanel>
+            <TextWrapper>
             <FormTitle>
               <span>CONTACT</span>
               <span>FORM</span>
@@ -30,6 +32,7 @@ const ContactForm = () => {
               <AppContact>MAIL : marcinplezia@gmail.com</AppContact>
               <AppContact>CONTACT INFO : +48 691 804 400</AppContact>
             </ContactDetails>
+            </TextWrapper>
             <ContactPicture src={aboutpicture} alt="My Portrait" />
           </LeftPanel>
 

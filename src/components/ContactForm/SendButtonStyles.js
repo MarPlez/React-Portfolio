@@ -32,6 +32,11 @@ export const AnimatedButton = styled.button`
     cursor: not-allowed;
     opacity: 0.8;
   }
+
+  @media (max-width: 768 px) {
+  width: 30px;
+  height: 30px;
+  }
 `;
 
 export const Loader = styled.div`
@@ -45,5 +50,6 @@ export const Loader = styled.div`
 
 export const Check = styled.span`
   font-size: 30px;
+  color: #00fa1e;
   animation: ${pop} 0.4s ease forwards;
 `;

@@ -40,12 +40,11 @@ export default function SplitImageSlider() {
 
    return (
 <WrapperIntro>
+   <TitleWrapper>
+     <Title>Hello.</Title>
+     <WelcomeText>WELCOME TO MY PAGE</WelcomeText>
+   </TitleWrapper>
   <InnerWrapper>
-    <TitleWrapper>
-      <Title>Hello.</Title>
-      <WelcomeText>WELCOME TO MY PAGE</WelcomeText>
-    </TitleWrapper>
-
     <TextLeft position={position}>Photographer</TextLeft>
     <BannerLeft src={banerLeft} position={position} />
     

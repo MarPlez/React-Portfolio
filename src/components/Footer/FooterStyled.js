@@ -4,7 +4,7 @@ export const FooterContainer = styled.footer`
   position: absolute;
   display: flex;
   width: 100%;
-  height: 450px;
+  height: 400px;
   overflow-x: hidden;
   overflow-y: visible;
 `;

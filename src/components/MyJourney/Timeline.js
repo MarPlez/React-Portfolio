@@ -106,7 +106,7 @@ export default function Timeline() {
   return (
     <>
     <TimelineHeading>MY JOURNEY</TimelineHeading>
-    <TimelineDiv as="ol" aria-label="Historia i projekty">
+    <TimelineDiv as="ol" >
       <Axis aria-hidden="true" />
       {items.map((item, i) => (
         <TimelineRowAnimated key={i} item={item} />

@@ -1,7 +1,6 @@
 import React from "react";
 import {
   TextChanger,
-  IntroText,
   RolesContainer,
   RolesInner,
   Role
@@ -10,7 +9,6 @@ import {
 const ChangingText = () => {
   return (
     <TextChanger>
-     <IntroText></IntroText> 
      <RolesContainer>
         <RolesInner>
           <Role>Frontend Developer</Role>

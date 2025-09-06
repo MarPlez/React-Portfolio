@@ -2,24 +2,52 @@ import styled from 'styled-components';
 
 export const ContactFormContainer = styled.div`
   display: flex;
+  flex-didection: row;
   background-color: #F3F2EE;
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
   padding: 50px;
   margin: 50px;
+
+  @media (max-width: 1200px) {
+  padding: 10px;
+  margin: 30px;
+  }
+
+  @media (max-width: 768px) {
+  flex-direction: column;
+  }
 `;
 
 export const LeftPanel = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px;
+
+  @media (max-width: 1200px) {
+  padding: 50px 20px;
+  }
+
+  @media (max-width: 768px) {
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+`;
+
+export const TextWrapper = styled.div `
+  padding-bottom: 40px;  
+
+  @media (max-width: 1200px) {
+  padding-bottom: 40px;
+  }
 `;
 
 export const FormTitle = styled.div`
   display: flex;
   flex-direction: column;
   color: #a85700;
-  font-size: 26px;
+  font-size: clamp(20px, 3vw, 26px);
   font-weight: bold;
   line-height: 1;
 `;
@@ -29,9 +57,14 @@ export const ContactDetails = styled.div`
 `;
 
 export const AppContact = styled.div`
-  font-size: 12px;
+  font-size: clamp(10px, 2vw, 12px);
   color: black;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+  margin-top: 0;
+  line-height: 1.5;
+  }
 `;
 
 export const ContactPicture = styled.img`
@@ -39,13 +72,25 @@ export const ContactPicture = styled.img`
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  padding-top: 40px;
+
+  @media (max-width: 1200px) {
+  width: 130px;
+  height: 130px;
+  } 
+
+  @media (max-width: 768px) {
+  width: 110px;
+  height: 110px;
+  }
 `;
 
 export const RightPanel = styled.div`
   flex: 1;
   padding: 30px 50px 30px 50px;
 
+  @media (max-width: 768px) {
+  padding: 20px 20px 20px 20px;
+  }
 `;
 
 export const ContactFormWrapper = styled.div``;

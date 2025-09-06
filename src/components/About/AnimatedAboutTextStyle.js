@@ -2,51 +2,43 @@ import styled, { keyframes } from "styled-components";
 
 export const RoleChange = keyframes`
   0%   { transform: translateY(0); }
-  25%  { transform: translateY(-50px); }
-  50%  { transform: translateY(-100px); }
-  75%  { transform: translateY(-150px); }
-  100% { transform: translateY(-200px); }
+  25%  { transform: translateY(-1.2em); }
+  50%  { transform: translateY(-2.4em); }
+  75%  { transform: translateY(-3.6em); }
+  100% { transform: translateY(-4.8em); }
 `;
 
 export const TextChanger = styled.div`
-display: flex;
-flex-direction: column; 
-align-items: center;
-display: flex;
-color: black;
-font-size: 36px;
-`;
-
-export const IntroText = styled.p`
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
+  font-size: clamp(24px, 3vw, 36px);
+  color: black;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 export const RolesContainer = styled.div`
   overflow: hidden;
-  height: 50px; 
+  height: 1.2em; 
   position: relative;
+  width: 100%;
 `;
 
 export const RolesInner = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 380px;
+  width: 100%;
   animation: ${RoleChange} 4.5s infinite;
-  animation-delay: 3s; 
+  animation-delay: 3s;
 `;
 
 export const Role = styled.span`
-  height: 50px;
+  height: 1.2em;
+  line-height: 1em;
   font-weight: bold;
-  display: flex;
-  align-items: center;
   color: #a85700;
-  margin: 0;
-  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+
 `;
-
-

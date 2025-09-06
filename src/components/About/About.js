@@ -28,7 +28,5 @@ export default function About() {
         </AboutText>
       </AboutRight>
     </AboutDiv>
-    
-    
   );
 }
