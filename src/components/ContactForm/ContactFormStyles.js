@@ -60,6 +60,17 @@ export const AppContact = styled.div`
   font-size: clamp(10px, 2vw, 12px);
   color: black;
   margin-top: 10px;
+  
+  a {
+    color: black;          
+    text-decoration: none;  
+    cursor: pointer;
+    
+   &:hover {
+      color: #a85700;       
+    }
+  }
+  
 
   @media (max-width: 768px) {
   margin-top: 0;

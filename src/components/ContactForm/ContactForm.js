@@ -29,7 +29,7 @@ const ContactForm = () => {
               <span>FORM</span>
             </FormTitle>
             <ContactDetails>
-              <AppContact>MAIL : marcinplezia@gmail.com</AppContact>
+              <AppContact><a href="mailto:marcinplezia@gmail.com" className="cursor-hover-target">MAIL: marcinplezia@gmail.com</a></AppContact>
               <AppContact>CONTACT INFO : +48 691 804 400</AppContact>
             </ContactDetails>
             </TextWrapper>
