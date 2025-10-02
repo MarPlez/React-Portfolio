@@ -1,6 +1,6 @@
 import React from "react";
-import BanerCourses from "../img/baner_courses.png";
-import BanerGithub from "../img/baner_github.png";
+import BanerCourses from "../../static/img/baner_courses.png";
+import BanerGithub from "../../static/img/baner_github.png";
 import { CarouselPictures } from "./CarouselPictures/CarouselPictures";
 import { CarouselClients } from "./CarouselClients/CarouselClients";
 

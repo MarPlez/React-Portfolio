@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Intro, LogoHeader, Logo } from "./LandingPageStyle";
 
+const FIRST = 0;
+const LAST = 1;
+
 export default function LandingPage() {
   const logoRefs = useRef([]);
   const timersRef = useRef([]);
@@ -47,8 +50,8 @@ export default function LandingPage() {
   return (
     <Intro slideUp={slideUp}>
       <LogoHeader>
-        <Logo ref={(el) => (logoRefs.current[0] = el)}>Marcin</Logo>
-        <Logo ref={(el) => (logoRefs.current[1] = el)}>Plezia</Logo>
+        <Logo ref={(el) => (logoRefs.current[FIRST] = el)}>Marcin</Logo>
+        <Logo ref={(el) => (logoRefs.current[LAST] = el)}>Plezia</Logo>
       </LogoHeader>
     </Intro>
   );

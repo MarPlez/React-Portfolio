@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Cursor } from "./CustomCursorStyles";
 
 export const CustomCursor = () => {
   const cursorRef = useRef(null);
@@ -42,28 +43,10 @@ export const CustomCursor = () => {
     };
   }, []);
 
-  const size = isHoveringTarget ? 50 : 30;
-  const border = isHoveringTarget ? "1px solid transparent" : "1px solid #cf8536";
-  const background = isHoveringTarget ? "rgba(208, 131, 0, 0.3)" : "transparent";
-
   return (
-    <div
+    <Cursor
       ref={cursorRef}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: `${size}px`,
-        height: `${size}px`,
-        marginLeft: `-${size / 2}px`,
-        marginTop: `-${size / 2}px`,
-        borderRadius: "50%",
-        backgroundColor: background,
-        border: border,
-        pointerEvents: "none",
-        transition: "width 0.25s ease, height 0.25s ease, margin 0.25s ease, background-color 0.25s ease, border 0.25s ease",
-        zIndex: 9999,
-      }}
+      isHovering={isHoveringTarget}
     />
   );
 };

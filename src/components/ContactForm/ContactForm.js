@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutpicture from '../img/aboutpicture.png';
+import aboutpicture from '../../static/img/aboutpicture.png';
 import {
   ContactFormContainer,
   LeftPanel,
@@ -18,6 +18,7 @@ import {
   TextWrapper
 } from './ContactFormStyles';
 import SendButton from './SendButton';
+import contactFormConfig from '../../config/contactFormConfig';
 
 const ContactForm = () => {
   return (
@@ -42,23 +43,23 @@ const ContactForm = () => {
               <FormBox>
                 <InputBox className="small-field">
                   <Input required />
-                  <Label>First Name</Label>
+                  <Label>{contactFormConfig.firstName}</Label>
                 </InputBox>
                 <InputBox className="small-field">
                   <Input required />
-                  <Label>Last Name</Label>
+                  <Label>{contactFormConfig.lastName}</Label>
                 </InputBox>
                 <InputBox className="small-field">
                   <Input required />
-                  <Label>Email</Label>
+                  <Label>{contactFormConfig.email}</Label>
                 </InputBox>
                 <InputBox className="small-field">
                   <Input required />
-                  <Label>Mobile Number</Label>
+                  <Label>{contactFormConfig.mobile}</Label>
                 </InputBox>
                 <InputBox className="big-field">
                   <Textarea required />
-                  <Label>Write Your Message Here.</Label>
+                  <Label>{contactFormConfig.message}</Label>
                 </InputBox>
                 <InputBox className="big-field">
                   <SendButton className="cursor-hover-target" />

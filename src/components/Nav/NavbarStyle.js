@@ -1,6 +1,6 @@
 import styled, { keyframes, css } from "styled-components";
-import githubIcon from '../img/github.png';
-import githubHoverIcon from '../img/githubhover.png';
+import githubIcon from '../../static/img/github.png';
+import githubHoverIcon from '../../static/img/githubhover.png';
 
 const itemAppear = keyframes`
   0%   { opacity: 0; transform: translateX(-20px); }

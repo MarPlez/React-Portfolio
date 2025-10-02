@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import imageBefore from '../img/imagebefore.png';
-import imageAfter from '../img/imageafter.png';
-import banerRight from '../img/baner_right.png';
-import banerLeft from '../img/baner_left.png';
+import imageBefore from '../../static/img/imagebefore.png';
+import imageAfter from '../../static/img/imageafter.png';
+import banerRight from '../../static/img/baner_right.png';
+import banerLeft from '../../static/img/baner_left.png';
 import { 
   WrapperIntro, 
   InnerWrapper, 

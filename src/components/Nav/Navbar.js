@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { SECTIONS } from '../../config/sections';
+
 import {
   Logo,
   NavContainer,
@@ -43,10 +45,10 @@ export default function Navbar() {
         <Logo>MarcinPlezia</Logo>
 
         <Menu>
-          <MenuItem><MenuLink href="#home" className="cursor-hover-target">Home</MenuLink></MenuItem>
-          <MenuItem><MenuLink href="#about" className="cursor-hover-target">About</MenuLink></MenuItem>
-          <MenuItem><MenuLink href="#myhistory" className="cursor-hover-target">MyJourney</MenuLink></MenuItem>
-          <MenuItem><MenuLink href="#contact" className="cursor-hover-target">Contact</MenuLink></MenuItem>
+          <MenuItem><MenuLink href={`#${SECTIONS.HOME}`} className="cursor-hover-target">Home</MenuLink></MenuItem>
+          <MenuItem><MenuLink href={`#${SECTIONS.ABOUT}`} className="cursor-hover-target">About</MenuLink></MenuItem>
+          <MenuItem><MenuLink href={`#${SECTIONS.HISTORY}`} className="cursor-hover-target">MyJourney</MenuLink></MenuItem>
+          <MenuItem><MenuLink href={`#${SECTIONS.CONTACT}`} className="cursor-hover-target">Contact</MenuLink></MenuItem>
         </Menu>
 
         <GitHubLink href="https://github.com/MarPlez" target="_blank" aria-label="GitHub">
@@ -73,16 +75,16 @@ export default function Navbar() {
         <nav>
           <ul>
             <MobileMenuItem>
-             <MobileMenuLink $open={open} style={{ animationDelay: '0.20s' }} className="cursor-hover-target" href="#home">Home</MobileMenuLink>
+             <MobileMenuLink $open={open} style={{ animationDelay: '0.20s' }} className="cursor-hover-target" href={`#${SECTIONS.HOME}`}>Home</MobileMenuLink>
            </MobileMenuItem>
            <MobileMenuItem>
-            <MobileMenuLink $open={open} style={{ animationDelay: '0.35s' }} className="cursor-hover-target" href="#about">About</MobileMenuLink>
+            <MobileMenuLink $open={open} style={{ animationDelay: '0.35s' }} className="cursor-hover-target" href={`#${SECTIONS.ABOUT}`}>About</MobileMenuLink>
            </MobileMenuItem>
            <MobileMenuItem>
-            <MobileMenuLink $open={open} style={{ animationDelay: '0.50s' }} className="cursor-hover-target" href="#myhistory">MyJourney</MobileMenuLink>
+            <MobileMenuLink $open={open} style={{ animationDelay: '0.50s' }} className="cursor-hover-target" href={`#${SECTIONS.HISTORY}`}>MyJourney</MobileMenuLink>
            </MobileMenuItem>
            <MobileMenuItem>
-            <MobileMenuLink $open={open} style={{ animationDelay: '0.65s' }} className="cursor-hover-target" href="#contact">Contact</MobileMenuLink>
+            <MobileMenuLink $open={open} style={{ animationDelay: '0.65s' }} className="cursor-hover-target" href={`#${SECTIONS.CONTACT}`}>Contact</MobileMenuLink>
            </MobileMenuItem>
           </ul>
         </nav>
