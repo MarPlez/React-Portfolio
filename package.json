@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/portfolio",
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.6",
     "@fontsource/playfair-display": "^5.2.6",

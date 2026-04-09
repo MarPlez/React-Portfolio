@@ -16,6 +16,15 @@ export const StyledSwiper = styled(Swiper)`
   margin: 20px 0 10px 0;
   }
 
+  @media (max-width: 450px) {
+  width: 250px;
+  height: 125px;
+
+  .swiper-pagination {
+      display: none;
+    }
+  }
+
   .swiper-pagination {
     bottom: 0px !important;
     left: 0;
@@ -47,6 +56,12 @@ export const StyledSwiper = styled(Swiper)`
     transition: background 0.2s, transform 0.2s;
 
     @media (max-width: 1000px) {
+    width: 30px;
+    height: 30px;
+    }
+
+    @media (max-width: 450px) {
+    margin-top: 20px;
     width: 30px;
     height: 30px;
     }

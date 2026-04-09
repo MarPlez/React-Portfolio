@@ -22,7 +22,7 @@ export const CustomCursor = () => {
     };
 
     const updatePosition = () => {
-      const speed = 0.06;
+      const speed = 0.10;
       currentX.current += (mouseX.current - currentX.current) * speed;
       currentY.current += (mouseY.current - currentY.current) * speed;
 

@@ -105,7 +105,6 @@ height: 95%;
 
 export const OverlayImage = styled(Image)`
   clip-path: ${(p) => `inset(0 ${100 - p.position}% 0 0)`};
-  transition: clip-path 0.1s ease-out;
   will-change: clip-path;
 `;
 

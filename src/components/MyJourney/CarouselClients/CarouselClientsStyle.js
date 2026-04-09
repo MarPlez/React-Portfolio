@@ -16,6 +16,11 @@ export const StyledSwiper = styled(Swiper)`
   @media (max-width: 768px) {
   margin-top: 10px;
   }
+
+  @media (max-width: 450px) {
+  width: 250px;
+  margin-top: 10px;
+  }
 `;
 
 export const StyledSwiperSlide = styled(SwiperSlide)`         
@@ -27,4 +32,8 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
   @media (max-width: 1000px) {
   height: 60px;
   }  
+
+  @media (max-width: 450px) {
+  height: 40px;
+  }
 `;
